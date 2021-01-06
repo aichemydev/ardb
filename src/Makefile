@@ -166,7 +166,7 @@ ifeq ($(uname_S),Linux)
 	CXXFLAGS+=-DCORO_ASM
 	CCFLAGS+=-DCORO_ASM
 	LIBS+=-lrt
-	CXXFLAGS+=-Werror
+	#CXXFLAGS+=-Werror
 else
 	MALLOC=libc
 	CXXFLAGS+=-DCORO_UCONTEXT -D_XOPEN_SOURCE
